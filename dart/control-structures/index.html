@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=7">
+    <title>Control Structures Chapter 1</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="blog, erwin" />
+    
+    
+    
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link rel="stylesheet" href="https://erwinaris.github.io/plugins/css/materialize.min.css">
+    
+    <link rel="stylesheet" href="https://erwinaris.github.io/plugins/css/materialize.css">
+    
+
+    <link rel="stylesheet" href="/css/style.css">
+
+</head><body class="grey darken-4"> <!-- FIxed Navigation --> 
+<header style="position:fixed; left:10px; bottom:10px; z-index: 9999;">
+  
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Menu</a>
+
+  
+  <ul id='dropdown1' class='dropdown-content'>
+    
+    <li><a href="/">Home</a></li>
+    
+    <li><a href="/dart/">Dart</a></li>
+    
+    <li><a href="/portfolio/">Portfolio</a></li>
+    
+  </ul>
+</header>
+
+<!-- End Fixed Navigation --><main id="content">
+
+<div class="container white-text">
+  <h4 class="z-depth-3 center">Control Structures Chapter 1</h4>
+  <div class="divider"></div><br>
+    <p><strong>Struktur Kontrol</strong> adalah suatu perintah, pernyataan, kondisi, blok program ( blok kode ) yang berguna untuk mengendalikan jalannya alur program.</p>
+<p>Secara umum struktur kontrol terbagi menjadi 3 :</p>
+<ol>
+<li>
+<p>struktur pemilihan <strong>(kondisi)</strong>.</p>
+<blockquote>
+<p>struktur pemilihan artinya blok program atau perintah yang berfungsi untuk memilih suatu kondisi yang telah didefinisikan.</p>
+</blockquote>
+</li>
+<li>
+<p>struktur pengulangan <strong>(looping)</strong>.</p>
+<blockquote>
+<p>struktur pengulangan berarti blok program atau perintah yang dieksekusi untuk mengulang pernyataan yang telah didefinisikan sampai kondisi tertentu.</p>
+</blockquote>
+</li>
+<li>
+<p>struk eksepsi <strong>(exception)</strong>.</p>
+<blockquote>
+<p>struktur eksepsi merupakan mekanisme yang paling populer yang paling populer dalam menangani <em>error</em> yang terjadi pada saat <em>runtime</em> (program berjalan) atau yang lebih dikenal dengan <em>runtime error</em>.</p>
+</blockquote>
+</li>
+</ol>
+<h6 id="1-sebagai-contoh-struktur-pemilihan-dibawah-ini-menggunakan-_if_-dan-_else_">1. sebagai contoh <strong>struktur pemilihan</strong> dibawah ini, menggunakan <em>if</em> dan <em>else</em>.</h6>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">void</span> main(List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">String</span><span style="color:#f92672">&gt;</span> args) {
+  <span style="color:#66d9ef">dynamic</span> name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;Erwin&#39;</span>;
+
+<span style="display:block;width:100%;background-color:#3c3d38">  <span style="color:#66d9ef">if</span> (name <span style="color:#f92672">==</span> name){
+</span>    print(name);
+<span style="display:block;width:100%;background-color:#3c3d38">  }<span style="color:#66d9ef">else</span>{
+</span>    print(<span style="color:#e6db74">&#39;no name&#39;</span>);
+  }
+}</code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>keterangan</strong> :</p>
+<ol>
+<li>
+<p><em>dynamic</em> adalah tipe yang didefinisikan dan dapat di isi dengan tipe apapun(boolean, integer, double, atau String).</p>
+</li>
+<li>
+<p><em>if</em> jika kondisi benar maka akan di eksekusi.</p>
+</li>
+<li>
+<p>opsi <em>else</em> jika kondisi salah.</p>
+</li>
+</ol>
+<h6 id="2-menggunakan-_if---else-if---else_">2. menggunakan <em>if - else if - else</em></h6>
+<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
+<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="display:block;width:100%;background-color:#3c3d38"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span></span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span></code></pre></td>
+<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
+<pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dart" data-lang="dart"><span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;dart:io&#39;</span>;
+<span style="color:#66d9ef">import</span> <span style="color:#e6db74">&#39;dart:core&#39;</span>;
+
+<span style="color:#66d9ef">void</span> main(List<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">String</span><span style="color:#f92672">&gt;</span> args) {
+  stdout.write(<span style="color:#e6db74">&#39;Input a number : &#39;</span>);
+  <span style="color:#66d9ef">var</span> number <span style="color:#f92672">=</span> <span style="color:#66d9ef">int</span>.tryParse(stdin.readLineSync());
+
+<span style="display:block;width:100%;background-color:#3c3d38">  <span style="color:#66d9ef">if</span> (number <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>) {
+</span>    print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">$</span>number<span style="color:#e6db74"> is Positive&#39;</span>);
+<span style="display:block;width:100%;background-color:#3c3d38">  }<span style="color:#66d9ef">else</span> <span style="color:#66d9ef">if</span> (number <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>){
+</span>    print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">$</span>number<span style="color:#e6db74"> is Negative&#39;</span>);
+<span style="display:block;width:100%;background-color:#3c3d38">  }<span style="color:#66d9ef">else</span>{
+</span>    print(<span style="color:#e6db74">&#39;</span><span style="color:#e6db74">$</span>number<span style="color:#e6db74"> is Null&#39;</span>);
+  }
+
+}</code></pre></td></tr></table>
+</div>
+</div>
+<p><strong>keterangan</strong> :</p>
+<p>Pemilihan yang melibatkan lebih dari satu kasus.</p>
+<ol>
+<li>form kontrol lagi dan lagi control</li>
+</ol>
+
+</div>
+
+
+<ul class="pagination center">
+  <li class="disabled"><a href="#!"><i class="fas fa-arrow-left"></i></a></li>
+  <li class="active"><a href="#!">1</a></li>
+  <li class="waves-effect"><a href="#!">2</a></li>
+  <li class="waves-effect"><a href="#!"><i class="fas fa-arrow-right"></i></a></li>
+</ul>
+
+
+
+        </main><footer class="page-footer grey darken-4 center">
+    <div class="container">
+        <div class="footer-copyright">
+            <div class="col m6 s12">
+                © 2020 Copyright
+            </div>
+
+            <div class="col m6 s12">
+                <ul>
+                    <li>
+                        <a href="/terms-of-services/" target="_blank" rel="noopener noreferrer">Terms of Services</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+        <script src="https://erwinaris.github.io/plugins/js/materialize.js"></script>
+        
+        <script src="https://erwinaris.github.io/plugins/js/materialize.min.js"></script>
+        
+        <script src="https://erwinaris.github.io/plugins/js/initialize.js"></script>
+        
+
+        <script src="/plugins/jquery/jquery.min.js"></script>
+
+        <script type="text/javascript" src="https://kit.fontawesome.com/00c6815820.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

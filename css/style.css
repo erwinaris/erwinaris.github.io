@@ -1,0 +1,29 @@
+.images img
+{
+    height: 150px;
+    width: 150px;
+}
+
+.about 
+{
+    text-justify: justify;
+}
+
+.horizontal
+{
+    display: block;
+    float: right;
+    padding: 5px;
+    
+}
+
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
