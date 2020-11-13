@@ -18,7 +18,9 @@
 }
 
 
+/* body untuk membentuk footer */
 body {
+    font-family: sans-serif;
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -27,3 +29,28 @@ body {
   main {
     flex: 1 0 auto;
   }
+  
+  /* tutup body */
+
+.hover a
+{
+    color: #607d8b;
+}
+
+.hover a:hover
+{
+    color: #26a69a;
+}
+
+
+@media only screen and (max-width: 600px)
+{
+    .list .new {
+        visibility: hidden;
+    }
+
+    .list a {
+        font-size: 0.9em;
+    }
+
+}
