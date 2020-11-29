@@ -40,6 +40,7 @@ body {
 .hover a:hover
 {
     color: #26a69a;
+    transition: all ease-in 0.5s;
 }
 
 
@@ -54,3 +55,21 @@ body {
     }
 
 }
+
+
+/* Flags navigation */
+.flagselect {
+    border: 1px solid #ee0f0f;
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+    color: black;
+    font-size: 90%;
+  }
+  .flagnoselect {
+    padding: 0px;
+    margin: 0px;
+    color: #333333;
+    font-size: 90%;
+  }
+  
