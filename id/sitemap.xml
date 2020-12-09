@@ -78,6 +78,10 @@
   </url>
   
   <url>
+    <loc>https://erwinaris.github.io/id/nodejs/hello-world/</loc>
+  </url>
+  
+  <url>
     <loc>https://erwinaris.github.io/id/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -89,6 +93,10 @@
                 hreflang="id"
                 href="https://erwinaris.github.io/id/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/id/nodejs/</loc>
   </url>
   
   <url>

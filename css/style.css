@@ -72,4 +72,10 @@ body {
     color: #333333;
     font-size: 90%;
   }
+
+  .gambar 
+  {
+    display: flex;
+    float: left;
+  }
   
