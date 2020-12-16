@@ -3,6 +3,36 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://erwinaris.github.io/en/dart/control-structures/</loc>
+    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://erwinaris.github.io/id/dart/control-structures/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://erwinaris.github.io/en/dart/control-structures/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/dart/</loc>
+    <lastmod>2020-09-18T00:00:00+00:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="id"
+                href="https://erwinaris.github.io/id/dart/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://erwinaris.github.io/en/dart/"
+                />
+  </url>
+  
+  <url>
     <loc>https://erwinaris.github.io/en/</loc>
     <lastmod>2020-09-18T00:00:00+00:00</lastmod>
     <xhtml:link
@@ -35,21 +65,6 @@
   <url>
     <loc>https://erwinaris.github.io/en/portfolio/</loc>
     <lastmod>2020-09-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://erwinaris.github.io/en/dart/</loc>
-    <lastmod>2020-09-02T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="id"
-                href="https://erwinaris.github.io/id/dart/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://erwinaris.github.io/en/dart/"
-                />
   </url>
   
   <url>
