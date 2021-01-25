@@ -1,3 +1,9 @@
+@font-face
+{
+  font-family: 'magda';
+  src: url('/font/Magda Text Regular.otf');
+}
+
 .images img
 {
     height: 150px;
@@ -20,7 +26,7 @@
 
 /* body untuk membentuk footer */
 body {
-    font-family: sans-serif;
+    font-family: 'magda', 'sans-serif';
     display: flex;
     min-height: 100vh;
     flex-direction: column;
@@ -78,4 +84,71 @@ body {
     display: flex;
     float: left;
   }
+
+  /* hire class in body.html */
+
+  .hire img
+  {
+    margin: 30px;
+    height: 100px;
+    width: 500px;
+    opacity: 0.1;
+    /* text-align: center; */
+    position: absolute;
+  }
+
+  @media only screen and (max-width: 600px)
+{
+  .hire img
+  {
+    width: 250px;
+    height: 50px;
+    opacity: 0.1;
+    /* left: 100px; */
+    /* position: absolute; */
+  }
+
+
+}
+
   
+
+  /* waktu  */
+
+  .jam {
+    overflow: hidden;
+    position: absolute;
+    left: 20px;
+		/* width: 330px; */
+		/* margin: 20px auto; */
+    /* border: 5px solid #efefef; */
+    z-index: 3;
+	}
+	.kotak{
+    float: left;
+    color: #fff;
+		/* width: 110px;
+		height: 100px; */
+		/* background-color: #189fff; */
+	}
+	.jam span {
+		color: #fff;
+		font-size: 20px;
+		text-align: center;
+		margin-top: 30px;
+  }
+  
+
+  /* selection */
+  
+  ::-moz-selection {
+    /* Code for Firefox */
+    color: #000000;
+  /*  background: #ffffff;*/
+    /* background: #230844; */
+  }
+  
+  ::selection {
+    /* color: #fff; */
+    background: #d6d5d5;
+  }
