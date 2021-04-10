@@ -83,6 +83,26 @@
   </url>
   
   <url>
+    <loc>https://erwinaris.github.io/en/tips/bash-zsh/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/tips/instal-firefox/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/tips/me/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/tips/tips/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/tips/vbox-tips/</loc>
+  </url>
+  
+  <url>
     <loc>https://erwinaris.github.io/en/categories/</loc>
     <xhtml:link
                 rel="alternate"
@@ -108,6 +128,10 @@
                 hreflang="en"
                 href="https://erwinaris.github.io/en/tags/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/tips/</loc>
   </url>
   
 </urlset>

@@ -1,56 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hi,..</title>
-    <link>https://erwinaris.github.io/en/</link>
-    <description>Recent content on Hi,..</description>
+    <title>Tips on Hi,..</title>
+    <link>https://erwinaris.github.io/en/tips/</link>
+    <description>Recent content in Tips on Hi,..</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://erwinaris.github.io/en/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://erwinaris.github.io/en/tips/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Control Structures Chapter 1</title>
-      <link>https://erwinaris.github.io/en/dart/control-structures/</link>
-      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://erwinaris.github.io/en/dart/control-structures/</guid>
-      <description>Control structure are commands, statements, conditions, code blocks that are useful for controlling program flow.
-In general, the control structure can be divided into 3:
-  selection structure (condition).
- option structure is a program block or command that functions to select predetermined conditions.
-   Loop structure (looping).
- loop structure means a program or command block that is executed for statements defined up to certain conditions.</description>
-    </item>
-    
-    <item>
-      <title>Terms Of Services</title>
-      <link>https://erwinaris.github.io/en/terms-of-services/</link>
-      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://erwinaris.github.io/en/terms-of-services/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Portfolio</title>
-      <link>https://erwinaris.github.io/en/portfolio/</link>
-      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://erwinaris.github.io/en/portfolio/</guid>
-      <description>Wordpress Development          UI/UX Design       </description>
-    </item>
-    
-    <item>
-      <title>Hello World</title>
-      <link>https://erwinaris.github.io/en/dart/hello-world/</link>
-      <pubDate>Wed, 02 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://erwinaris.github.io/en/dart/hello-world/</guid>
-      <description>DartLang is an object-oriented programming language (OOP), a language for general needs (general-purpose programming language_), the language used to create applications (_Mobile_ {IOS and Android}, _Web_ , _Desktop_, _server_ applications, even **IoT** (_Internet of Things_), using a so-called _dart virtual machine_ {application does not need to be compiled first}, **Open Source** is licensed **BSD**, and dart language is a Google production designed by **Lars Bak** and **Kasper Lund** in 2011.</description>
-    </item>
     
     <item>
       <title></title>
