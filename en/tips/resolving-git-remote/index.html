@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-us"><head>
-	<meta name="generator" content="Hugo 0.69.2" />
   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=7">
-  <title>Hi,..</title>
+  <title></title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#212121" />
   <meta name="description"
     content="Welcome to my website, learn everything, make something.">
   
   <meta name="keywords" content="blog, erwin, erwin aris prayogo, erwin aris" />
-  
-  
-  
-  <meta property="og:image" content="https://erwinaris.github.io/img/erwin.jpg" />
   
   
   
@@ -51,21 +46,9 @@
     
     <div class="switch center">
       <label>
-        <a href="/en/">
+        <a href="/en/tips/resolving-git-remote/">
         </a>English
         
-    
-    
-        <input id="get" type="checkbox" onclick="hyClick()">
-
-        <span class="lever"></span>
-        <a href="/id/">
-        </a>Indonesia
-      </label>
-    </div>
-
-
-    
 
     
     <li><a href="/en/">Home</a></li>
@@ -76,70 +59,59 @@
 
 </header><main id="content">
 
-<div class="container center">
-    <h4 class="blue-grey-text lighten-5">Hi,..</h4>
-    
-
-</div> <br>
 
 
+<section class="container">
+  <h4 class="center white-text"></h4>
+  <div class="divider"></div><br>
+
+  <div class="blue-grey-text">
+    <article>
+      <h1 id="blog--hugo--framework-hugo">blog  Hugo / framework hugo</h1>
+<p>masalah git remote menggunakan submodule :</p>
+<ol>
+<li>yang saya lakukan cloning repository github page ke direktori public menggunakan :</li>
+</ol>
+<blockquote>
+<p>git submodule add -b master <a href="https://github.com/erwinaris/erwinaris.github.io.git">https://github.com/erwinaris/erwinaris.github.io.git</a> public</p>
+</blockquote>
+<ol start="2">
+<li>pindah direktori public</li>
+</ol>
+<blockquote>
+<p>cd public/</p>
+</blockquote>
+<ol start="3">
+<li>tambahkan command dibawah :</li>
+</ol>
+<blockquote>
+<p>git add . / git add *
+git commit -m &ldquo;isi komit&rdquo;
+git push (tidak menggunakan &ldquo;git push -u origin master&rdquo; karena akan terjadi error)</p>
+</blockquote>
+
+    </article>
+  </div>
+</section>
 
 
 
-<div class="hire">
-    <img src="/img/hire.svg" alt="">
-</div>
-
-<div class="container center images">
-
-    
-    
-    
-    <img src="https://erwinaris.github.io/img/erwin.jpg" alt="" class="circle">
-
-    
-    
-    
 
 
 
-    <div class="container blue-grey-text">
 
-        <p>
-            I&#39;m a FullStack Developer
-        </p>
-        <ul class="collapsible">
-            <li>
-                <div class="collapsible-header grey darken-4 z-depth-3">
-                    <i class="fas fa-terminal"></i><span class="animasi-teks">About Me</span>
-                </div>
-                <div class="collapsible-body about"><span>My name is Erwin Aris Prayogo, I live in Lampung, Indonesia. More than 2 years of experience as a web developer, I&#39;m also a mobile apps developer using Flutter &amp; ui / ux designer.
-            I’m a freelancer, and right now I am looking forward to collaborating with you!</span></div>
-            </li>
-        </ul>
 
-        <div class="hover">
-            <ul>
-                
-                <li class="horizontal"><a href="https://api.whatsapp.com/send?phone=&#43;6288213128081&amp;text=Hi,%20perkenalkan%20saya%20Erwin%20Aris%20Prayogo,%20seorang%20web%20developer."><i class="fab fa-whatsapp fa-2x"></i></a></li>
-                
-                <li class="horizontal"><a href="https://t.me/ewinaris"><i class="fab fa-telegram fa-2x"></i></a></li>
-                
-                <li class="horizontal"><a href="mailto:erwinaris442@gmail.com"><i class="fas fa-envelope fa-2x"></i></a></li>
-                
-                <li class="horizontal"><a href="https://www.linkedin.com/in/erwin-aris-prayogo-504119157/"><i class="fab fa-linkedin fa-2x"></i></a></li>
-                
-                <li class="horizontal"><a href="https://github.com/erwinaris"><i class="fab fa-github-square fa-2x"></i></a></li>
-                
-            </ul>
-        </div>
-    </div>
+<ul class="pagination center hover">
+  
+  <li class="waves-effect"><a title="Next page in tips" href="https://erwinaris.github.io/en/tips/pdftk/"><i
+        class="fas fa-arrow-left"></i></a></li>
+  
 
-    <div class="hire">
-        <img src="/img/hire.svg" alt="">
-    </div>
-
-</div>
+  
+  <li class="waves-effect"><a title="Previous page in tips" href="https://erwinaris.github.io/en/tips/slahir-solve/"><i
+        class="fas fa-arrow-right"></i></a></li>
+  
+</ul>
 
 
         </main><footer class="page-footer grey darken-4 center">

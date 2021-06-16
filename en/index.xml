@@ -116,6 +116,18 @@ cowsay -f dragon mulai dari hal kecil !! maksimalkan bisnis dengan satu sentuhan
     
     <item>
       <title></title>
+      <link>https://erwinaris.github.io/en/tips/resolving-git-remote/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://erwinaris.github.io/en/tips/resolving-git-remote/</guid>
+      <description>blog Hugo / framework hugo masalah git remote menggunakan submodule :
+ yang saya lakukan cloning repository github page ke direktori public menggunakan :   git submodule add -b master https://github.com/erwinaris/erwinaris.github.io.git public
+ pindah direktori public   cd public/
+ tambahkan command dibawah :   git add . / git add * git commit -m &amp;ldquo;isi komit&amp;rdquo; git push (tidak menggunakan &amp;ldquo;git push -u origin master&amp;rdquo; karena akan terjadi error)</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://erwinaris.github.io/en/tips/slahir-solve/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
