@@ -46,7 +46,7 @@
     
     <div class="switch center">
       <label>
-        <a href="/en/tips/bash-zsh/">
+        <a href="/en/tips/shortcuts-vscode/">
         </a>English
         
 
@@ -67,18 +67,23 @@
 
   <div class="blue-grey-text">
     <article>
-      <h1 id="add-sbin-directories-to-path--this-is-useful-on-systems-that-have-sudo">Add sbin directories to PATH.  This is useful on systems that have sudo</h1>
-<p>[ -z &ldquo;${PATH##<em>/sbin</em>}&rdquo; ] || PATH=$PATH:/sbin:/usr/sbin</p>
-<p>export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools</p>
-<p>export PATH=$PATH:~/MobileApps/flutter/bin/</p>
-<p>#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR=&rdquo;/home/erwin/.sdkman&rdquo;
-[[ -s &ldquo;/home/erwin/.sdkman/bin/sdkman-init.sh&rdquo; ]] &amp;&amp; source &ldquo;/home/erwin/.sdkman/bin/sdkman-init.sh&rdquo;</p>
-<p>cowsay -f dragon mulai dari hal kecil !! maksimalkan bisnis dengan satu sentuhan bersama kami slahirtech.com | lolcat &amp;&amp; figlet -f bubble &ldquo;SLAHIR TECHNOLOGY&rdquo; | lolcat</p>
-<p>export NVM_DIR=&quot;$HOME/.nvm&rdquo;
-[ -s &ldquo;$NVM_DIR/nvm.sh&rdquo; ] &amp;&amp; . &ldquo;$NVM_DIR/nvm.sh&rdquo;  # This loads nvm
-[ -s &ldquo;$NVM_DIR/bash_completion&rdquo; ] &amp;&amp; . &ldquo;$NVM_DIR/bash_completion&rdquo;  # This loads nvm bash_completion</p>
+      <p><strong>Tips and tricks</strong></p>
+<p>in linux mint <em>ctrl+shift+alt+DownArrow</em> shortcuts are mapped to moving windows to different wordspaces.</p>
+<p>shortcut <em>ctrl+shift+alt+DownArrow</em> and <em>ctrl+shift+alt+UpArrow</em> doesn&rsquo;t work in linux mint</p>
+<ol>
+<li>
+<p>open pallete <em>ctrl+shit+P</em> search <em>preferrence: Open Keyboard Shortcut(JSON)</em></p>
+</li>
+<li>
+<p>add code json</p>
+</li>
+</ol>
+<blockquote>
+<p>{ &ldquo;key&rdquo;: &ldquo;ctrl+shift+alt+8&rdquo;, &ldquo;command&rdquo;: &ldquo;editor.action.copyLinesUpAction&rdquo;,
+&ldquo;when&rdquo;: &ldquo;editorTextFocus &amp;&amp; !editorReadonly&rdquo; },
+{ &ldquo;key&rdquo;: &ldquo;ctrl+shift+alt+2&rdquo;, &ldquo;command&rdquo;: &ldquo;editor.action.copyLinesDownAction&rdquo;,
+&ldquo;when&rdquo;: &ldquo;editorTextFocus &amp;&amp; !editorReadonly&rdquo; }</p>
+</blockquote>
 
     </article>
   </div>
@@ -93,9 +98,12 @@ export SDKMAN_DIR=&rdquo;/home/erwin/.sdkman&rdquo;
 
 <ul class="pagination center hover">
   
+  <li class="waves-effect"><a title="Next page in tips" href="https://erwinaris.github.io/en/tips/resolving-git-remote/"><i
+        class="fas fa-arrow-left"></i></a></li>
+  
 
   
-  <li class="waves-effect"><a title="Previous page in tips" href="https://erwinaris.github.io/en/tips/instal-firefox/"><i
+  <li class="waves-effect"><a title="Previous page in tips" href="https://erwinaris.github.io/en/tips/slahir-solve/"><i
         class="fas fa-arrow-right"></i></a></li>
   
 </ul>

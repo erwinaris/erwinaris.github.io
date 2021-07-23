@@ -46,7 +46,7 @@
     
     <div class="switch center">
       <label>
-        <a href="/en/tips/bash-zsh/">
+        <a href="/en/tips/keyrings-chrome/">
         </a>English
         
 
@@ -67,18 +67,14 @@
 
   <div class="blue-grey-text">
     <article>
-      <h1 id="add-sbin-directories-to-path--this-is-useful-on-systems-that-have-sudo">Add sbin directories to PATH.  This is useful on systems that have sudo</h1>
-<p>[ -z &ldquo;${PATH##<em>/sbin</em>}&rdquo; ] || PATH=$PATH:/sbin:/usr/sbin</p>
-<p>export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/tools</p>
-<p>export PATH=$PATH:~/MobileApps/flutter/bin/</p>
-<p>#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR=&rdquo;/home/erwin/.sdkman&rdquo;
-[[ -s &ldquo;/home/erwin/.sdkman/bin/sdkman-init.sh&rdquo; ]] &amp;&amp; source &ldquo;/home/erwin/.sdkman/bin/sdkman-init.sh&rdquo;</p>
-<p>cowsay -f dragon mulai dari hal kecil !! maksimalkan bisnis dengan satu sentuhan bersama kami slahirtech.com | lolcat &amp;&amp; figlet -f bubble &ldquo;SLAHIR TECHNOLOGY&rdquo; | lolcat</p>
-<p>export NVM_DIR=&quot;$HOME/.nvm&rdquo;
-[ -s &ldquo;$NVM_DIR/nvm.sh&rdquo; ] &amp;&amp; . &ldquo;$NVM_DIR/nvm.sh&rdquo;  # This loads nvm
-[ -s &ldquo;$NVM_DIR/bash_completion&rdquo; ] &amp;&amp; . &ldquo;$NVM_DIR/bash_completion&rdquo;  # This loads nvm bash_completion</p>
+      <p>Remove or disable popup keyrings google chrome / chromium:</p>
+<blockquote>
+<p>sudo vim /usr/share/applications/google-chrome.desktop</p>
+</blockquote>
+<p>edit or add <em>&ndash;password-store=basic</em> in Exec:</p>
+<blockquote>
+<p>Exec=/usr/bin/google-chrome-stable &ndash;incognito &ndash;password-store=basic</p>
+</blockquote>
 
     </article>
   </div>
@@ -93,9 +89,12 @@ export SDKMAN_DIR=&rdquo;/home/erwin/.sdkman&rdquo;
 
 <ul class="pagination center hover">
   
+  <li class="waves-effect"><a title="Next page in tips" href="https://erwinaris.github.io/en/tips/instal-firefox/"><i
+        class="fas fa-arrow-left"></i></a></li>
+  
 
   
-  <li class="waves-effect"><a title="Previous page in tips" href="https://erwinaris.github.io/en/tips/instal-firefox/"><i
+  <li class="waves-effect"><a title="Previous page in tips" href="https://erwinaris.github.io/en/tips/pdftk/"><i
         class="fas fa-arrow-right"></i></a></li>
   
 </ul>

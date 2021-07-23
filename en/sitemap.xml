@@ -83,7 +83,15 @@
   </url>
   
   <url>
-    <loc>https://erwinaris.github.io/en/tips/achievement/</loc>
+    <loc>https://erwinaris.github.io/en/opinion/achievement/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/opinion/me/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/opinion/mental-dewasa/</loc>
   </url>
   
   <url>
@@ -95,7 +103,7 @@
   </url>
   
   <url>
-    <loc>https://erwinaris.github.io/en/tips/me/</loc>
+    <loc>https://erwinaris.github.io/en/tips/keyrings-chrome/</loc>
   </url>
   
   <url>
@@ -104,6 +112,10 @@
   
   <url>
     <loc>https://erwinaris.github.io/en/tips/resolving-git-remote/</loc>
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/tips/shortcuts-vscode/</loc>
   </url>
   
   <url>
@@ -130,6 +142,10 @@
                 hreflang="en"
                 href="https://erwinaris.github.io/en/categories/"
                 />
+  </url>
+  
+  <url>
+    <loc>https://erwinaris.github.io/en/opinion/</loc>
   </url>
   
   <url>
