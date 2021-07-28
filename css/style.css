@@ -253,7 +253,7 @@ p
 {
   top: 200px;
   /* bottom: 200px; */
-  margin: 0px 10px 0px 90px;
+  margin: 0px 10px 0px 80px;
   position: relative;
   text-transform: capitalize;
 }
@@ -553,11 +553,12 @@ footer ul li a:hover
     justify-content: space-evenly;
     flex-direction: column;
     height: 100vh;
-    width: 45%;
+    width: 50%;
     right: 0;
     top: 0;
     align-items: center;
     transform: translateX(100%);
+    font-size: 13px;
     transition: all 1s;
     opacity: 0;
     position: fixed;
@@ -582,7 +583,7 @@ footer ul li a:hover
   
   .menu-toggle {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     z-index: 99;
     cursor: pointer;
     font-size: 25px;
@@ -590,7 +591,6 @@ footer ul li a:hover
   
   
   nav h4 {
-    display: flex;
     z-index: 99;
   }
   
@@ -621,7 +621,7 @@ footer ul li a:hover
   p
   {
     top: 400px;
-    margin: 0px 10px 0px 70px;
+    margin: 0px 10px 0px 55px;
     font-size: 14px;
   }
   
@@ -756,6 +756,11 @@ footer ul li a:hover
 /* ------------------------------------------- @MEDIA SCREEN 375px ---------------------------------- */
 
 @media only screen and (max-width: 375px) {
+
+  nav ul
+  {
+    font-size: 12px;
+  }
   
   .circle
   {
@@ -778,7 +783,7 @@ footer ul li a:hover
   p
   {
     /* bottom: 500px; */
-    margin: 0px 10px 0px 64px;
+    margin: 0px 10px 0px 55px;
     font-size: 12px;
   }
     
