@@ -26,13 +26,17 @@
   */
 html
 {
+  margin: 0;
+  padding: 0;
   /* overflow-x: hidden; */
   scroll-behavior: smooth; /* smooth scrolling down and up */
-  width: 100%;
+  /* width: 100%; */
 }
 
 body
 {
+  margin: 0;
+  padding: 0;
   position: relative;
   overflow-x: hidden !important;
   font-family: 'Inter', sans-serif;
@@ -811,41 +815,20 @@ footer ul li a:hover
   .skill
   {
     height: 150px;
-    width: 340px;
+    width: 330px;
   }
 
   .skill img
   {
     top: 30px;
     left: 40px;
-    height: 100px;
-    width: 100px;
+    height: 90px;
+    width: 90px;
   }
 
-.skill h4
-{
-  top: -1px;
-}
-  
-  .hire-me
+  .skill h4
   {
-    font-size: 13px;
-    top: 400px;
-  }
-
-  .hire-me i {
-    color: #ffffffce;
-  }
-  
-  .hire-me i:hover {
-    color: #ffffff;
-  }
-  
-  
-  .hire-me:hover
-  {
-    color: #ffffff;
-    transition: ease-in-out 0.3s;
+    top: -1px;
   }
   
   .card
