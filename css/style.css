@@ -1,0 +1,861 @@
+/* 
+  Code by Erwin Aris Prayogo
+  FullStack Developer
+  */
+  
+  /* Font  */
+  
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  
+  
+  * 
+  {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    background-color: --bg;
+    color: var(--color);
+  }
+
+  *:hover {
+    color: var(--hover);
+  }
+  
+  /* 
+  using width 100% in the html element and using overflow property in the body
+  */
+html
+{
+  overflow-x: hidden;
+  scroll-behavior: smooth; /* smooth scrolling down and up */
+  width: 100%;
+}
+
+body
+{
+  font-family: 'Inter', sans-serif;
+}
+  
+
+/* THEME DARK */
+
+/* GLOBAL STYLES */
+#theme-light 
+{
+  --bg: #dddddd;
+  --color: #201f1f;
+  --slider: rgba(221, 221, 221, 0.863);
+  background-color: var(--bg);
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  z-index: -99;
+  margin: 0;
+  padding: 0;
+  color: var(--color);
+}
+
+#theme-dark 
+{
+  --bg: #201f1f;
+  --color: #ffffff;
+  --slider: rgba(32, 31, 31, 0.863);
+  background-color: var(--bg);
+  padding-top: 5em;
+  display: flex;
+  justify-content: center;
+  z-index: -99;
+  margin: 0;
+  padding: 0;
+  color: var(--color);
+}
+
+.dark-mode 
+{
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+}
+
+/* ---------------- SYNTAX HIGHLIGHTER ---------------- */
+
+.syntax-higlighter 
+{
+  font-family: monospace;
+  z-index: -99;
+  position: fixed;
+  top: 50%;
+}
+
+.syntax-higlighter a 
+{
+  /* text-transform: lowercase; */
+  text-decoration: none;
+}
+
+.syntax-higlighter h5, span 
+{
+  color: #4baccc;
+  /* text-indent: 20px; */
+}
+
+.syntax-higlighter h5.indent 
+{
+  text-indent: 20px;
+}
+
+.syntax-higlighter .star 
+{
+  color: #ff0000;
+}
+
+.syntax-higlighter .property 
+{
+  color: #b144fa;
+}
+
+.default 
+{
+  color: var(--color);
+}
+
+
+  
+
+/* HEADER NavBar using float*/
+
+/* nav ul
+{
+  float: right;
+  font-weight: 800;
+  margin-right: 70px;
+  text-transform: uppercase;
+}
+
+nav ul li
+{
+  display: inline-block;
+  list-style-type: none;
+  padding: 15px;
+}
+
+nav ul li a
+{
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  color: #383b3b;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+}
+
+nav ul li a:hover
+{
+  color: #f3003d;
+  transition: 0.3s;
+} */
+
+
+/* HEADER NavBar using inline */
+
+
+nav 
+{
+  /* background-color: #4baccc; */
+  display: flex;
+  justify-content: space-around;
+  /* padding: 50px; */
+  margin-top: 40px;
+  width: 100%; /* untuk merubah navbar menjadi position: fixed maka perlu menambahkan width: 100%*/
+  position: fixed;
+  z-index: 99;
+}
+
+.menu-toggle 
+{
+  display: none;
+  /* justify-content: space-between; */
+}
+
+nav h4.logo
+{
+  font-weight: 800;
+  color: var(--color);
+  text-transform: capitalize;
+}
+
+nav ul
+{
+  font-weight: 800;
+  list-style-type: none;
+  width: 25%;
+  text-transform: uppercase;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li
+{
+  /* left: 170px; */
+  /* position: relative; */
+  z-index: 99;
+}
+
+nav ul li a 
+{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  /* border:1px solid rgba(255, 255, 255, 0.486); */
+  border-radius: 10px;
+  color: var(--color);
+  cursor: pointer;
+  padding: 10px;
+}
+
+nav ul li a:hover
+{
+  color: #4baccc;
+  transition: 0.3s;
+}
+
+
+
+/* GRID */
+
+.grid-rows
+{
+  /* background-color: #f3003d; */
+  display: grid;
+  grid-template-rows: auto;
+}
+
+.grid-columns
+{
+  /* background-color: #fcf7f7; */
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+}
+
+h1
+{
+  top: 200px;
+  /* bottom: 200px; */
+  font-size: 3.5em;
+  /* font-size: 5vw; */
+  font-weight: 800;
+  margin: 0px 10px 0px 50px;
+  position: relative;
+}
+
+p
+{
+  top: 200px;
+  /* bottom: 200px; */
+  margin: 0px 10px 0px 90px;
+  position: relative;
+  text-transform: capitalize;
+}
+
+
+.circle
+{
+  background-color: rgba(255, 255, 255, 0.342);
+  background-image: url('../assets/images/erwin.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  height: 550px;
+  width: 550px;
+  clip-path: circle();
+  z-index: 1;
+  filter: grayscale(1);
+  /* opacity: 0.7; */
+  transition: 1s;
+}
+
+
+.circle:hover 
+{
+  /* transform: scale(2); */
+  filter: grayscale(0);
+  height: 570px;
+  width: 570px;
+}
+
+/* HIRE ME button */
+
+.hire-me
+{
+  background-image: linear-gradient(to top, #4baccc, #58c6eb, #a9ddee);
+  border-radius: 10px;
+  box-shadow: 5px 2px 10px #4baccc;
+  color: #ffffffce;
+  cursor: pointer;
+  font-weight: 700;
+  padding: 10px;
+  position: absolute;
+  right: 140px;
+  text-transform: capitalize;
+  top: 500px;
+}
+
+.hire-me i 
+{
+  color: #ffffffce;
+}
+
+.hire-me i:hover
+{
+  color: #ffffff;
+}
+
+
+.hire-me:hover
+{
+  color: #ffffff;
+  transition: ease-in-out 0.3s;
+}
+
+
+/* MAIN */
+
+.container
+{
+  /* background-color: #f3003d; */
+  height: 500px;
+  width: 100%;
+}
+
+span
+{
+  color: #4baccc;
+}
+
+/* .hr
+{
+  background-color: tomato;
+  width: 300px;
+  height: 20px;
+  position: relative;
+}
+
+.hr:hover {
+  
+} */
+
+h2
+{
+  font-size: 1.875em;
+  /* font-size: 3vw; */
+  font-weight: 800;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+/* 
+
+RIENCE */
+
+.skill
+{
+  backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: rgba(255, 255, 255, 0.164);
+  border-width: 1px 3px 2px;
+  border-color: rgba(255, 255, 255, 0.486);
+  border-right-style: solid;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+  height: 200px;
+  padding: 8px;
+  width: 400px;
+  transition: 0.4s ease-in-out; /* transition must here */
+  position: relative;
+}
+
+.skill img
+{
+  position: relative;
+  top: 40px;
+  left: 40px;
+  height: 130px;
+  width: 130px;
+}
+
+.skill h4
+{
+  color: var(--color);
+  padding: 50px;
+  top: 10px;
+  text-transform: capitalize;
+  text-align: left;
+  position: relative;
+}
+
+.skill:hover
+{
+  /* transition: 0.4s ease-in-out;  */
+  /* transition not here ^, this effect not smooth up */
+  transform: translateY(1em);
+}
+
+
+/* CARD */
+
+.card
+{
+  backdrop-filter: blur(10px);
+  -moz-backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.164);
+  border: 1px solid rgba(255, 255, 255, 0.432);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
+  height: 300px;
+  padding: 8px;
+  width: 400px;
+  transition: 0.4s ease-in-out; /* transition must here */
+}
+
+.card:hover
+{
+  /* transition: 0.4s ease-in-out;  */
+  /* transition not here ^, this effect not smooth up */
+  transform: translateY(1em);
+}
+
+
+#card h1
+{
+  /* position: absolute; */
+  z-index: 99999;
+}
+
+.card img
+{
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 15px;
+  height: 300px;
+  width: 400px;
+}
+
+
+footer
+{
+  /* background-color: #fa255b; */
+  position: relative;
+  padding: 50px;
+  top: 100px;
+}
+
+
+footer .text {
+  font-size: 18px;
+  padding: 50px;
+}
+
+
+footer ul
+{
+  display: inline;
+}
+
+footer ul li
+{
+  list-style-type: none;
+  padding: 8px;
+}
+
+footer ul li a
+{
+  color: var(--color);
+  text-decoration: none;
+  text-align: center;
+}
+
+footer ul li a:hover
+{
+  color: #4baccc;
+  transition: 0.3s;
+}
+
+#back-to-top
+{
+  background-color: rgba(75, 172, 204, 0.856);
+  cursor: pointer;
+  clip-path: circle();
+  height: 50px;
+  padding-top: 25px;
+  position: absolute;
+  right: 50px;
+  width: 50px;
+  text-align: center;
+  top: 260px;
+}
+
+#back-to-top a
+{
+  color: #ffffff;
+}
+
+#back-to-top i
+{
+  color: #ffffffce;
+  font-size: 25px;
+}
+
+#back-to-top i:hover
+{
+  color: #ffffff;
+  font-size: 25px;
+}
+
+
+/* --------------------------TYPING TEXT-------------------------- */
+
+#typing {
+  color:#ffffff;
+  text-indent: 17px;
+  text-transform: capitalize;
+}
+
+
+#typing a {
+  text-decoration: none;
+  cursor: none;
+}
+
+
+/* ----------------------------@MEDIA SCREEN 768px----------------------------------------- */
+
+@media only screen and (max-width: 768px) {
+
+  nav {
+    margin-top: 30px;
+  }  
+
+  nav ul
+  {
+    background-color: var(--slider);
+    position: absolute;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 100vh;
+    width: 45%;
+    right: 0;
+    top: 0;
+    align-items: center;
+    transform: translateX(100%);
+    transition: all 1s;
+    opacity: 0;
+    position: fixed;
+  }
+
+  nav ul.slider {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  
+  nav ul li {
+    display: flex;
+    z-index: 99;
+  }
+
+  nav ul li a 
+{
+  box-shadow: 0px;
+  border:0px;
+  border-radius: 10px;
+}
+  
+  .menu-toggle {
+    display: flex;
+    justify-content: space-around;
+    z-index: 99;
+    cursor: pointer;
+    font-size: 25px;
+  }
+  
+  
+  nav h4 {
+    display: flex;
+    z-index: 99;
+  }
+  
+  
+  
+  
+  .circle
+  {
+    height: 500px;
+    width: 500px;
+  }
+  
+  .circle:hover {
+    height: 520px;
+    width: 520px;
+  }
+  
+  h1
+  {
+    top: 400px;
+    font-size: 2.7em;
+    font-weight: 800;
+    margin: 200px 10px 0px 40px;
+    position: relative;
+  }
+  
+  
+  p
+  {
+    top: 400px;
+    margin: 0px 10px 0px 70px;
+    font-size: 14px;
+  }
+  
+  .skill
+  {
+    height: 150px;
+    padding: 8px;
+    width: 400px;
+    margin-top: 17px;
+  }
+  
+  .skill img
+  {
+    top: 30px;
+    height: 100px;
+    width: 100px;
+  }
+  
+  .skill h4
+  {
+    padding: 50px;
+    top: -20px;
+  }
+  
+  .hire-me
+  {
+    right: 100px;
+    top: 440px;
+  }
+  
+  .card
+  {
+    margin-top: 20px;
+  }
+  
+  
+  .container
+  {
+    height: 700px;
+  }
+  
+  .grid-rows
+  {
+    /* background-color: #f3003d; */
+    display: grid;
+    grid-template-rows: auto;
+    justify-content: space-around;
+  }
+  
+  .grid-columns
+  {
+    /* background-color: #fcf7f7; */
+    display: grid;
+    grid-template-columns: auto;
+    /* justify-content: space-evenly; */
+  }
+  
+  footer
+  {
+    position: relative;
+    /* padding: 10px; */
+    top: 400px;
+  }
+  
+  footer .text
+  {
+    padding: 10px;
+    font-size: 15px;
+  }
+    
+  footer ul li
+  {
+    list-style-type: none;
+    padding: 6px;
+  }
+  
+  footer ul li a
+  {
+    padding: 20px;
+  }
+  
+}
+
+
+/* -------------------------------------@MEDIA SCREEN 576px----------------------------- */
+
+@media only screen and (max-width: 576px) {
+
+  .circle
+  {
+    height: 470px;
+    width: 470px;
+  }
+
+  .circle:hover {
+    height: 500px;
+    width: 500px;
+  }
+
+  .skill h4
+  {
+    color: var(--color);
+    padding: 50px;
+    top: -1px;
+  }
+
+  h1 {
+    font-size: 2.2em;
+  }
+
+  p {
+    font-size: 13px;
+    left: -10px;
+  }
+
+  .hire-me
+  {
+    font-size: 14px;
+    right: 100px;
+    top: 440px;
+  }
+
+  footer .text
+  {
+    padding: 20px;
+    font-size: 15px;
+  }
+}
+
+
+
+/* ------------------------------------------- @MEDIA SCREEN 375px ---------------------------------- */
+
+@media only screen and (max-width: 375px) {
+  
+  .circle
+  {
+    height: 430px;
+    width: 430px;
+  }
+
+  .circle:hover {
+    height: 450px;
+    width: 450px;
+  }
+
+  h1
+  {
+    font-size: 1.8em;
+    margin: 200px 0px 0px 40px;
+  }
+
+
+  p
+  {
+    /* bottom: 500px; */
+    margin: 0px 10px 0px 64px;
+    font-size: 12px;
+  }
+    
+  .skill
+  {
+    height: 150px;
+    width: 340px;
+  }
+
+  .skill img
+  {
+    top: 30px;
+    left: 40px;
+    height: 100px;
+    width: 100px;
+  }
+
+.skill h4
+{
+  top: -1px;
+}
+  
+  .hire-me
+  {
+    font-size: 13px;
+    top: 400px;
+  }
+
+  .hire-me i {
+    color: #ffffffce;
+  }
+  
+  .hire-me i:hover {
+    color: #ffffff;
+  }
+  
+  
+  .hire-me:hover
+  {
+    color: #ffffff;
+    transition: ease-in-out 0.3s;
+  }
+  
+  .card
+  {
+    height: 250px;
+    width: 330px;
+  }
+  
+  .card img {
+    height: 250px;
+    width: 330px;
+  }
+  
+  
+  
+  footer
+  {
+    position: relative;
+    top: 230px;
+  }
+
+  footer .text
+  {
+    padding: 20px;
+    font-size: 13px;
+  }
+
+
+  footer ul li
+  {
+    font-size: 13px;
+  }
+
+  footer ul li a
+  {
+    padding: 10px;
+  }
+
+}
