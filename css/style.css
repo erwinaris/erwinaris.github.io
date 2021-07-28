@@ -26,13 +26,14 @@
   */
 html
 {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth; /* smooth scrolling down and up */
   width: 100%;
 }
 
 body
 {
+  overflow-x: hidden;
   font-family: 'Inter', sans-serif;
 }
   
@@ -542,7 +543,8 @@ footer ul li a:hover
 
 @media only screen and (max-width: 768px) {
 
-  nav {
+  nav
+  {
     margin-top: 30px;
   }  
 
@@ -756,6 +758,17 @@ footer ul li a:hover
 /* ------------------------------------------- @MEDIA SCREEN 375px ---------------------------------- */
 
 @media only screen and (max-width: 375px) {
+
+
+  body
+  {
+    overflow-x: hidden;
+  }
+
+  nav
+  {
+    overflow-x: hidden;
+  }
 
   nav ul
   {
