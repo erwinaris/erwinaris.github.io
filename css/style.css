@@ -33,6 +33,7 @@ html
 
 body
 {
+  position: relative;
   overflow-x: hidden;
   font-family: 'Inter', sans-serif;
 }
@@ -543,6 +544,11 @@ footer ul li a:hover
 
 @media only screen and (max-width: 768px) {
 
+  body
+  {
+    overflow-x: hidden !important;
+  }
+
   nav
   {
     margin-top: 30px;
@@ -712,6 +718,11 @@ footer ul li a:hover
 
 @media only screen and (max-width: 576px) {
 
+  body
+  {
+    overflow-x: hidden !important;
+  }
+
   .circle
   {
     height: 470px;
@@ -759,15 +770,9 @@ footer ul li a:hover
 
 @media only screen and (max-width: 375px) {
 
-
   body
   {
-    overflow-x: hidden;
-  }
-
-  nav
-  {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
   }
 
   nav ul

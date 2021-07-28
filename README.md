@@ -1,7 +1,7 @@
 **BLOG PERSONAL PORTFOLIO**
 
 
-========= mentel belum dewasa vs sudah dewasa ==============
+========= mental belum dewasa vs sudah dewasa ==============
 
 mental belum dewasa :
 
