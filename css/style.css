@@ -171,8 +171,8 @@ nav
   /* background-color: #4baccc; */
   display: flex;
   justify-content: space-around;
-  /* padding: 50px; */
-  margin-top: 40px;
+  /* padding: 10px; */
+  margin-top: 25px;
   width: 100%; /* untuk merubah navbar menjadi position: fixed maka perlu menambahkan width: 100%*/
   position: fixed;
   overflow-x: hidden;
@@ -185,8 +185,10 @@ nav
   /* justify-content: space-between; */
 }
 
+
 nav h4.logo
 {
+  padding: 13px;
   font-weight: 800;
   color: var(--color);
   text-transform: capitalize;
@@ -194,6 +196,7 @@ nav h4.logo
 
 nav ul
 {
+  padding: 10px;
   font-weight: 800;
   list-style-type: none;
   width: 25%;
@@ -205,6 +208,9 @@ nav ul
 
 nav ul li
 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0px 2px 8px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
   /* left: 170px; */
   /* position: relative; */
   z-index: 99;
@@ -212,12 +218,9 @@ nav ul li
 
 nav ul li a 
 {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
   /* border:1px solid rgba(255, 255, 255, 0.486); */
-  border-radius: 10px;
   color: var(--color);
   cursor: pointer;
-  padding: 10px;
 }
 
 nav ul li a:hover
@@ -247,7 +250,7 @@ nav ul li a:hover
 
 h1
 {
-  top: 200px;
+  top: 300px;
   /* bottom: 200px; */
   font-size: 3.5em;
   /* font-size: 5vw; */
@@ -258,7 +261,7 @@ h1
 
 p
 {
-  top: 200px;
+  top: 300px;
   /* bottom: 200px; */
   margin: 0px 10px 0px 80px;
   position: relative;
@@ -274,13 +277,15 @@ p
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
+  /* position: relative; */
+  object-fit: cover;
+  overflow-x: hidden !important;
   top: -100px;
   right: -100px;
   height: 550px;
   width: 550px;
-  clip-path: circle();
+  border-radius: 50%;
   z-index: 1;
-  filter: grayscale(1);
   /* opacity: 0.7; */
   transition: 1s;
 }
@@ -552,6 +557,8 @@ footer ul li a:hover
   nav
   {
     margin-top: 30px;
+    /* background-color: #ff0000; */
+    padding: 4px;
   }  
 
   nav ul
@@ -582,21 +589,81 @@ footer ul li a:hover
     z-index: 99;
   }
 
-  nav ul li a 
-{
-  box-shadow: 0px;
-  border:0px;
-  border-radius: 10px;
-}
+    nav ul li a 
+  {
+    box-shadow: 0px;
+    border:0px;
+    border-radius: 10px;
+  }
+
+  nav h4.logo
+  {
+    padding: 0;
+  }
+  
+
+  /* Hamburgur menu */
+
   
   .menu-toggle {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     z-index: 99;
+    /* cursor: pointer; */
+    position: relative;
+    /* background-color: #4baccc; */
+    /* font-size: 25px; */
+  }
+
+  .menu-toggle input 
+  {
+    position: absolute;
+    left: -4px;
+    top: -4px;
+    width: 37px;
+    height: 27px;
+    opacity: 0;
     cursor: pointer;
-    font-size: 25px;
+    z-index: 99;
   }
   
+  .menu-toggle span
+  {
+    border-radius: 3px;
+    display: block;
+    background-color: var(--color);
+    width: 28px;
+    height: 3px;
+    transition: all 0.8s;
+    z-index: -1;
+  }
+
+  .menu-toggle span:nth-child(2)
+  {
+    transform-origin: 1px 0;
+  }
+
+  .menu-toggle span:nth-child(4)
+  {
+    transform-origin: 0 100%;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2)
+  {
+    transform: rotate(45deg) translate(-1px, -1px);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(3)
+  {
+    transform: scale(0);
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(4)
+  {
+    transform: rotate(-45deg) translate(-1px, 0);
+  }
+
   
   nav h4 {
     z-index: 99;
@@ -607,6 +674,7 @@ footer ul li a:hover
   
   .circle
   {
+    overflow-x: hidden !important;
     height: 500px;
     width: 500px;
   }
@@ -718,9 +786,29 @@ footer ul li a:hover
 
 @media only screen and (max-width: 576px) {
 
+  /* Hamburgur menu */
+  
+
+  .menu-toggle input 
+  {
+    left: -2px;
+    top: -2px;
+  }
+  
+  .menu-toggle span
+  {
+    width: 25px;
+    height: 3px;
+  }
+
+  .menu-toggle span:nth-child(2)
+  {
+    transform-origin: -1px 0;
+  }
 
   .circle
   {
+    overflow-x: hidden !important;
     height: 470px;
     width: 470px;
   }
@@ -770,9 +858,29 @@ footer ul li a:hover
   {
     font-size: 12px;
   }
+
+  .menu-toggle input 
+  {
+    left: -3px;
+    top: -3px;
+    height: 22px;
+    width: 28px;
+  }
+  
+  .menu-toggle span
+  {
+    width: 22px;
+    height: 3px;
+  }
+
+  .menu-toggle span:nth-child(2)
+  {
+    transform-origin: -4px 1px;
+  }
   
   .circle
   {
+    overflow-x: hidden !important;
     height: 430px;
     width: 430px;
   }
