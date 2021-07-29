@@ -271,20 +271,20 @@ p
 
 .circle
 {
-  background-color: rgba(255, 255, 255, 0.342);
-  background-image: url('../assets/images/erwin.jpeg');
+  /* background-color: rgba(255, 255, 255, 0.342); */
+  background-image: url('../assets/images/erwin1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   position: absolute;
   /* position: relative; */
-  object-fit: cover;
   overflow-x: hidden !important;
-  top: -100px;
-  right: -100px;
-  height: 550px;
-  width: 550px;
-  border-radius: 50%;
+  top: 0px;
+  right: 0px;
+  height: 500px;
+  width: 500px;
+  /* border-radius: 50%; */
+  filter: grayscale(1);
   z-index: 1;
   /* opacity: 0.7; */
   transition: 1s;
@@ -295,8 +295,8 @@ p
 {
   /* transform: scale(2); */
   filter: grayscale(0);
-  height: 570px;
-  width: 570px;
+  height: 520px;
+  width: 520px;
 }
 
 /* HIRE ME button */
@@ -313,7 +313,7 @@ p
   position: absolute;
   right: 140px;
   text-transform: capitalize;
-  top: 500px;
+  top: 520px;
 }
 
 .hire-me i 
@@ -675,14 +675,15 @@ footer ul li a:hover
   .circle
   {
     overflow-x: hidden !important;
-    height: 500px;
-    width: 500px;
+    height: 440px;
+    width: 440px;
   }
   
   .circle:hover {
-    height: 520px;
-    width: 520px;
+    height: 460px;
+    width: 460px;
   }
+  
   
   h1
   {
@@ -725,7 +726,7 @@ footer ul li a:hover
   .hire-me
   {
     right: 100px;
-    top: 440px;
+    top: 470px;
   }
   
   .card
@@ -809,13 +810,13 @@ footer ul li a:hover
   .circle
   {
     overflow-x: hidden !important;
-    height: 470px;
-    width: 470px;
+    height: 400px;
+    width: 400px;
   }
 
   .circle:hover {
-    height: 500px;
-    width: 500px;
+    height: 420px;
+    width: 420px;
   }
 
   .skill h4
@@ -838,7 +839,7 @@ footer ul li a:hover
   {
     font-size: 14px;
     right: 100px;
-    top: 440px;
+    top: 450px;
   }
 
   footer .text
@@ -881,13 +882,18 @@ footer ul li a:hover
   .circle
   {
     overflow-x: hidden !important;
-    height: 430px;
-    width: 430px;
+    height: 360px;
+    width: 360px;
   }
 
   .circle:hover {
-    height: 450px;
-    width: 450px;
+    height: 380px;
+    width: 380px;
+  }
+
+  .hire-me
+  {
+    top: 400px;
   }
 
   h1
