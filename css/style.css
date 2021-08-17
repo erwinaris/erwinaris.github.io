@@ -170,9 +170,9 @@ nav
 {
   /* background-color: #4baccc; */
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   /* padding: 10px; */
-  margin-top: 25px;
+  margin: 25px 0px 0 10px;
   width: 100%; /* untuk merubah navbar menjadi position: fixed maka perlu menambahkan width: 100%*/
   position: fixed;
   overflow-x: hidden;
@@ -199,11 +199,12 @@ nav ul
   padding: 10px;
   font-weight: 800;
   list-style-type: none;
+  margin-right: 100px;
   width: 25%;
   text-transform: uppercase;
   z-index: 99;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 nav ul li
@@ -248,24 +249,24 @@ nav ul li a:hover
   justify-content: space-evenly;
 }
 
-h1
-{
-  top: 300px;
-  /* bottom: 200px; */
-  font-size: 3.5em;
-  /* font-size: 5vw; */
-  font-weight: 800;
-  margin: 0px 10px 0px 50px;
+.title-name {
+  left: 100px;
   position: relative;
+  top: 200px;
+  width: 500px;
+  
 }
 
-p
+.title-name h2
 {
-  top: 300px;
-  /* bottom: 200px; */
-  margin: 0px 10px 0px 80px;
-  position: relative;
+  color: #4baccc;
+  font-weight: 800;
+  margin-bottom: 20px;
   text-transform: capitalize;
+}
+
+.title-name span:nth-child(2) {
+  color: #fff;
 }
 
 
@@ -339,8 +340,9 @@ p
 .container
 {
   /* background-color: #f3003d; */
-  height: 650px;
+  height: 400px;
   /* width: 100%; */
+  margin: 0 0 200px 0;
 }
 
 span
@@ -360,7 +362,7 @@ span
   
 } */
 
-h2
+.title h2
 {
   font-size: 1.875em;
   /* font-size: 3vw; */
@@ -432,6 +434,7 @@ RIENCE */
   background-color: rgba(255, 255, 255, 0.164);
   border: 1px solid rgba(255, 255, 255, 0.432);
   border-radius: 15px;
+  margin: 0 5px 0 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.16);
   height: 300px;
   padding: 8px;
@@ -469,7 +472,7 @@ footer
   /* background-color: #fa255b; */
   position: relative;
   padding: 50px;
-  top: 100px;
+  /* top: 50px; */
 }
 
 
@@ -554,6 +557,15 @@ footer ul li a:hover
 
 @media only screen and (max-width: 768px) {
 
+
+  .container
+{
+  /* background-color: #f3003d; */
+  height: 650px;
+  /* width: 100%; */
+  margin: 0 0 150px 0;
+}
+
   nav
   {
     margin-top: 30px;
@@ -568,6 +580,7 @@ footer ul li a:hover
     justify-content: space-evenly;
     flex-direction: column;
     height: 100vh;
+    margin-right: 0px;
     width: 50%;
     right: 0;
     top: 0;
@@ -599,6 +612,7 @@ footer ul li a:hover
   nav h4.logo
   {
     padding: 0;
+    margin-left: 20px;
   }
   
 
@@ -611,6 +625,7 @@ footer ul li a:hover
     justify-content: space-between;
     z-index: 99;
     /* cursor: pointer; */
+    margin-right: 80px;
     position: relative;
     /* background-color: #4baccc; */
     /* font-size: 25px; */
@@ -651,6 +666,7 @@ footer ul li a:hover
 
   .menu-toggle input:checked ~ span:nth-child(2)
   {
+    margin-right: 150px;
     transform: rotate(45deg) translate(-1px, -1px);
   }
 
@@ -670,8 +686,6 @@ footer ul li a:hover
   }
   
   
-  
-  
   .circle
   {
     /* overflow-x: hidden !important; */
@@ -685,23 +699,11 @@ footer ul li a:hover
   }
   
   
-  h1
-  {
-    top: 400px;
-    font-size: 2.7em;
-    font-weight: 800;
-    margin: 200px 10px 0px 40px;
-    position: relative;
+  .title-name {
+    top: 600px;
   }
   
-  
-  p
-  {
-    top: 400px;
-    margin: 0px 10px 0px 55px;
-    font-size: 14px;
-  }
-  
+
   .skill
   {
     height: 150px;
@@ -735,11 +737,6 @@ footer ul li a:hover
   }
   
   
-  .container
-  {
-    height: 640px;
-  }
-  
   .grid-rows
   {
     /* background-color: #f3003d; */
@@ -760,7 +757,7 @@ footer ul li a:hover
   {
     position: relative;
     /* padding: 10px; */
-    top: 400px;
+    top: 300px;
   }
   
   footer .text
@@ -787,7 +784,20 @@ footer ul li a:hover
 
 @media only screen and (max-width: 576px) {
 
+  
+
+  .title-name {
+    top: 600px;
+    width: 350px;
+    left: 50px;
+  }
+
   /* Hamburgur menu */
+
+  .menu-toggle
+  {
+    margin-right: 40px;
+  }
   
 
   .menu-toggle input 
@@ -803,6 +813,11 @@ footer ul li a:hover
   {
     width: 25px;
     height: 3px;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2)
+  {
+    margin-right: 75px;
   }
 
   .menu-toggle span:nth-child(2)
@@ -862,6 +877,7 @@ footer ul li a:hover
   {
     font-size: 12px;
   }
+  
 
   .menu-toggle input 
   {
@@ -876,6 +892,11 @@ footer ul li a:hover
   {
     width: 22px;
     height: 3px;
+  }
+
+  .menu-toggle input:checked ~ span:nth-child(2)
+  {
+    margin-right: 60px;
   }
 
   .menu-toggle span:nth-child(2)
@@ -900,18 +921,9 @@ footer ul li a:hover
     top: 400px;
   }
 
-  h1
-  {
-    font-size: 1.8em;
-    margin: 200px 0px 0px 40px;
-  }
-
-
-  p
-  {
-    /* bottom: 500px; */
-    margin: 0px 10px 0px 55px;
-    font-size: 12px;
+  .title-name {
+    left: 20px;
+    /* width: 300px; */
   }
     
   .skill
@@ -949,7 +961,7 @@ footer ul li a:hover
   footer
   {
     position: relative;
-    top: 230px;
+    top: 150px;
   }
 
   footer .text
