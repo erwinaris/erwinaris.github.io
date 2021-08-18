@@ -17,6 +17,10 @@ maka ->
 jika masih kosong maka tambahkan dulu repository nya
 6. git remote add origin <alamat repository / https://github.com/erwinaris/erwinaris.github.io.git>
 
+7. remove dulu origin nya git remote remove origin
+
+8. git remote add origin https://<PERSONALACCESSTOKEN>@github.com/<USERNAME>/<REPO>.git atau (git remote add origin https://gh-3jdj234rjfjdjjd2n2@github.com/saigowthamr/car-demo.git)
+
 7. git push -u origin master
 
 

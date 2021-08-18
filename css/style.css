@@ -250,6 +250,7 @@ nav ul li a:hover
 }
 
 .title-name {
+  padding: 20px;
   left: 100px;
   position: relative;
   top: 200px;
@@ -257,7 +258,7 @@ nav ul li a:hover
   
 }
 
-.title-name h2
+.title-name h1
 {
   color: #4baccc;
   font-weight: 800;
@@ -265,9 +266,14 @@ nav ul li a:hover
   text-transform: capitalize;
 }
 
-.title-name span:nth-child(2) {
-  color: #fff;
+.title-name h2 
+{
+  text-transform: capitalize;
 }
+
+/* .title-name span:nth-child(2) {
+  color: var(-);
+} */
 
 
 .circle
@@ -364,7 +370,7 @@ span
 
 .title h2
 {
-  font-size: 1.875em;
+  font-size: 2em;
   /* font-size: 3vw; */
   font-weight: 800;
   text-align: center;
@@ -542,8 +548,8 @@ footer ul li a:hover
 
 #typing {
   color:#ffffff;
-  text-indent: 17px;
-  text-transform: capitalize;
+  /* text-indent: 17px; */
+  /* text-transform: capitalize; */
 }
 
 
@@ -702,6 +708,11 @@ footer ul li a:hover
   .title-name {
     top: 600px;
   }
+
+  .title h2 
+  {
+    font-size: 1.8em;
+  }
   
 
   .skill
@@ -784,12 +795,22 @@ footer ul li a:hover
 
 @media only screen and (max-width: 576px) {
 
-  
 
+  
   .title-name {
-    top: 600px;
-    width: 350px;
-    left: 50px;
+    top: 550px;
+    width: 380px;
+    left: 20px;
+  }
+
+  .title-name h2
+  {
+    font-size: 1.2em;
+  }
+
+  .title-name h1 
+  {
+    font-size: 1.5em;
   }
 
   /* Hamburgur menu */
@@ -844,11 +865,11 @@ footer ul li a:hover
     top: -1px;
   }
 
-  h1 {
-    font-size: 2.2em;
+  .title h2 {
+    font-size: 1.5em;
   }
 
-  p {
+  .title p {
     font-size: 13px;
     left: -10px;
   }
@@ -907,27 +928,36 @@ footer ul li a:hover
   .circle
   {
     /* overflow-x: hidden !important; */
-    height: 360px;
-    width: 360px;
+    height: 300px;
+    width: 300px;
   }
 
   .circle:hover {
-    height: 380px;
-    width: 380px;
+    height: 320px;
+    width: 320px;
   }
 
   .hire-me
   {
-    top: 400px;
+    font-size: 13px;
+    top: 350px;
   }
 
   .title-name {
-    left: 20px;
-    /* width: 300px; */
+    font-size: 13px;
+    top: 550px;
+    left: 10px;
+    width: 300px;
+  }
+
+  .title h2
+  {
+    font-size: 1.2em;
   }
     
   .skill
   {
+    font-size: 13px;
     height: 150px;
     width: 330px;
   }
