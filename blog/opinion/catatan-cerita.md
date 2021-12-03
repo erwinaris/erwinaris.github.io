@@ -1,0 +1,3 @@
+catatan kehidupan sebagai suami.
+
+jujur saya tidak pernah bangga jika istri bekerja diluar dari rumahnya sendiri yaitu rumah bagi anak-anaknya dan anak-anak kami, entah engkau menjadi seorang guru, dosen, pengusaha, menteri, bahkan menjadi presiden sekalipun saya tidak akan pernah bangga akan semua itu. pekerjaan terbaik istri adalah dirumah mengurus dan mendidik anak, tapi bukan pekerjaan rumah seperti masak, menyapu dan lain-lain. karena itu semua tanggung jawab bukan kewajiban, kewajiban seorang istri adalah mengurus dan mendidik anak dan melayani suami tapi saya sendiri bukan tipe laki-laki yang memaksa istri untuk melayani terserah istri mau atau tidak saya tidak akan pernah memaksakan kehendak saya.

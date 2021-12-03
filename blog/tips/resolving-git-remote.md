@@ -12,3 +12,11 @@ masalah git remote menggunakan submodule :
 > git add . / git add *
 > git commit -m "isi komit"
 > git push (tidak menggunakan "git push -u origin master" karena akan terjadi error)
+
+
+
+### gunakan git push -f origin master ketika kamu benar2 ingin menimpa isi file di repository
+
+### tapi jika kamu ragu menggunakan cara diatas maka solusinya adalah tetap membuat / mengenerate token kemudian lakukan seperti ini di terminal "git remote set-url origin https://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@github.com/erwinyani/erwinyani.github.io/" (git remote set-url origin https://<token>@github.com/<username>/<repo>)
+
+
