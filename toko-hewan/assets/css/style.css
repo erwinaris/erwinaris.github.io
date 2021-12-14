@@ -1,0 +1,692 @@
+/* code by erwin aris prayogo */
+/* 12 agustus 2021 */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary: #58C6EB;
+    --secondary: #555;
+    --button-color: #ffffff;
+    --section: #ffffff;
+    --bg: #F5F5F5;
+    --bg-top: #EBEAEA;
+    --placeholder: #B4B4B4;
+    --border-primary: #E5E7E9;
+    --border-secondary: #58C6EB;
+}
+
+
+
+/* ---------------------- body ----------------------------------- */
+
+body {
+    background-color: var(--bg);
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+/* ----------------------container ------------------------------- */
+
+.container {
+    width: 90%;
+    margin: auto;
+    box-sizing: border-box;
+    /* background-color: #000; */
+}
+
+
+/* ---------------top header ------------------ */
+
+#top-header {
+    background-color: var(--bg-top);
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 32px;
+    width: 100%;
+}
+
+
+#top-header ul {
+    display: flex;
+    list-style-type: none;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+
+#top-header ul li {
+    left: 60px;
+    padding: 10px;
+    position: relative;
+}
+
+#top-header ul li a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+#top-header .top-icon {
+    right: 60px;
+    position: relative;
+}
+
+#top-header .top-icon i {
+    color: var(--secondary);
+    font-size: 24px;
+    padding: 10px;
+}
+
+
+
+/* ---------------- header ------------------ */
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+
+/* --------------- nav --------------------- */
+
+header nav #logo h1 {
+    color: var(--primary);
+    text-transform: capitalize;
+}
+
+header nav a {
+    color: var(--secondary);
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+
+/* -------------- search ----------------------- */
+
+header nav .menu-kategori {
+    top: 10px;
+    font-size: 14px;
+    position: relative;
+}
+
+header nav .menu-kategori i {
+    font-size: 14px;
+}
+
+header nav .search input {
+    border: 1px solid var(--border-primary);
+    border-radius: 5px;
+    color: var(--placeholder);
+    font-size: 14px;
+    height: 40px;
+    padding: 15px;
+    text-transform: capitalize;
+    width: 600px;
+}
+
+header nav .search i {
+    font-size: 24px;
+    top: 6px;
+    right: 40px;
+    position: relative;
+}
+
+header nav .kategori {
+    font-size: 14px;
+    padding-top: 8px;
+    text-transform: capitalize;
+    color: var(--secondary);
+}
+
+header nav .kategori span {
+    font-size: 12px;
+    margin-right: 16px;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li {
+    border: 2px solid var(--border-secondary);
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 900;
+    list-style-type: none;
+    height: 40px;
+    margin-left: 15px;
+    box-sizing: border-box;
+    padding: 10px 17px;
+    width: 80px;
+}
+
+header nav ul li.active {
+    background-color: var(--primary);
+    color: var(--button-color);
+}
+
+/* --------------------------- main ---------------------------- */
+
+/* ---------------------- slide show --------------------------- */
+
+main .slide-show {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 52px;
+}
+
+/* rancangan big images */
+/* main .slide-utama {
+    background-color: bisque;
+    border-radius: 10px;
+    height: 300px;
+    width: 800px;
+} */
+
+main .slide-utama img {
+    /* background-color: bisque; */
+    border-radius: 5px;
+    height: 300px;
+    width: 800px;
+}
+
+main .grid-small {
+    /* background-color: red; */
+    box-sizing: border-box;
+    border-radius: 5px;
+    display: grid;
+    height: 300px;
+    width: 413px;
+    margin-left: 5px;
+}
+
+/* rancangan small images */
+/* main .small {
+    background-color: black;
+    border-radius: 10px;
+    height: 147.5px;
+    margin-bottom: 5px;
+    width: 425px;
+} */
+
+main .small img {
+    /* background-color: black; */
+    border-radius: 5px;
+    height: 147.5px;
+    /* margin-bottom: 5px; */
+    width: 413px;
+}
+
+
+
+/* --------------------------- kategori pilihan -------------------------- */
+
+main .kategori-pilihan {
+    /* background-color: brown; */
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 30px;
+}
+
+main .lokasi {
+   background-color: var(--section);
+   border-radius: 5px;
+   box-sizing: border-box;
+   color: var(--secondary);
+   height: 280px;
+   padding: 20px 10px;
+   text-align: center;
+   text-transform: capitalize;
+   width: 320px;
+}
+
+main .kategori-pilihan .formInput i {
+    color: var(--placeholder);
+    position: relative;
+    top: 2px;
+    right: 25px;
+}
+
+.lokasi .formInput input {
+    border: 1px solid var(--border-primary);
+    border-radius: 3px;
+    color: var(--placeholder);
+    padding-left: 10px;
+    height: 33px;
+    margin-top: 10px;
+    text-transform: capitalize;
+    width: 187px;
+}
+
+
+main .lokasi label {
+    color: var(--secondary);
+    font-size: 14px;
+    font-weight: 500;
+    /* text-transform: capitalize; */
+}
+
+
+/* ------------------------ pilihan ------------------------ */
+main .pilihan {
+    background-color: var(--section);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--secondary);
+    height: 280px;
+    margin-left: 10px;
+    padding: 20px;
+    text-transform: capitalize;
+    width: 73%;
+}
+
+main .pilihan h4 {
+    margin-left: 5px;
+}
+
+main .pilihan .grid-pilihan {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+main .pilihan .grid-pilihan .pilihan-hewan {
+    border: 1px solid var(--border-primary);
+    border-radius: 3px;
+    height: 170px;
+    padding: 8px;
+    margin: 10px 5px;
+    text-align: center;
+    width: 200px;
+}
+
+main .pilihan .grid-pilihan .pilihan-hewan img {
+    height: 120px;
+    width: 120px;
+    /* background-size: cover;
+    background-position: center;
+    background-origin: border-box; */
+}
+
+main .pilihan .grid-pilihan .pilihan-hewan .kategori-text {
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 10px;
+}
+
+/* ---------------------------------- aqiqah ------------------------ */
+/* section aqiqah dan qurban masih jadi satu style */
+
+main .section-aqiqah {
+    background-color: var(--section);
+    border-radius: 5px;
+    height: 400px; 
+    margin-top: 30px;
+    padding: 20px;
+}
+
+main .section-aqiqah h3 {
+    color: var(--secondary);
+    line-height: 50px;
+    margin: 0px 10px 0 10px;
+    text-transform: uppercase;
+}
+
+main .section-aqiqah .aqiqah {
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+}
+
+main .section-aqiqah .aqiqah .kategori-aqiqah {
+    border: 1px solid var(--border-primary);
+    border-radius: 3px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.274);
+    color: var(--secondary);
+    height: 280px;
+    margin: 0px 10px 0 10px;
+    padding: 10px;
+    width: 182px;
+}
+
+
+main .section-aqiqah .aqiqah .kategori-aqiqah .img-aqiqah img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 105px;
+    margin-bottom: 20px;
+    width: 114px;
+}
+
+
+main .section-aqiqah .aqiqah .kategori-aqiqah .small-text {
+    font-size: 12px;
+}
+
+main .section-aqiqah .aqiqah .kategori-aqiqah .harga {
+    font-size: 14px;
+    margin: 30px 5px 10px 0px;
+    word-spacing: 10px;
+}
+
+main .section-aqiqah .aqiqah .kategori-aqiqah .harga span:nth-child(1) {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+main .section-aqiqah .aqiqah .kategori-aqiqah .lokasi-penjual span:nth-child(1) img {
+    height: 12px;
+    width: 12px;
+}
+
+main .section-aqiqah .aqiqah .kategori-aqiqah .lokasi-penjual span:nth-child(2) {
+    font-size: 12px;
+}
+
+
+main .section-aqiqah .aqiqah .kategori-aqiqah .rating {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+
+/* ------------------------------- load more --------------------------- */
+main .section-load-more {
+    /* background-color: khaki; */
+    margin-top: 30px;
+}
+
+main .section-load-more .load-more   {
+    border: 2px solid var(--border-secondary);
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 50px;
+    font-size: 14px;
+    padding: 15px;
+    margin: auto auto;
+    text-transform: capitalize;
+    text-align: center;
+    width: 300px;
+}
+
+main .section-load-more a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+/* -------------------------------- footer ----------------------------- */
+.foot {
+    margin-top: 30px;
+}
+
+.foot .garis-horizontal {
+    border: 1px solid var(--border-secondary);
+    /* width: 100%; */
+    position: relative;
+    z-index: auto;
+}
+
+.foot .footer-text {
+    color: var(--secondary);
+    margin: 40px 63px 40px 63px;
+}
+
+.foot .text-toko {
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+
+.foot .footer-text h4 {
+    line-height: 40px;
+}
+
+.foot .footer-text p {
+    font-size: 14px;
+}
+
+
+/* ----- tentang ----- */
+.foot .tentang {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 63px 60px 63px;
+}
+
+.foot .tentang .tentang-kami {
+    text-transform: capitalize;
+}
+
+.foot .tentang .tentang-kami h5 {
+    line-height: 30px;
+    color: var(--secondary);
+}
+
+.foot .tentang .tentang-kami ul li {
+    font-size: 12px;
+    line-height: 20px;
+    list-style-type: none;
+}
+
+.foot .tentang .tentang-kami ul li a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+.foot .tentang .tentang-kami .social-icon {
+    word-spacing: 10px;
+}
+
+.foot .copyright {
+    color: var(--secondary);
+    font-size: 12px;
+    margin: 30px 63px 30px 63px;
+    text-transform: capitalize;
+}
+
+.foot .copyright a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+
+/* ------------------------- form daftar ------------------------- */
+.title-register a {
+    text-decoration: none;
+}
+
+.title-register h2 {
+    /* border: 1px solid var(--border-secondary); */
+    color: var(--primary);
+    font-weight: bold;
+    margin: 50px 0px 30px 0px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.daftar {
+    background-color: var(--section);
+    border: 1px solid var(--border-primary);
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
+    height: 550px;
+    margin: 0 auto 50px auto;
+    width: 450px;
+}
+
+.daftar h3 {
+    color: var(--secondary);
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 20px 0;
+}
+
+.daftar .form-daftar {
+    margin: auto;
+    text-align: center;
+}
+
+.daftar .form-daftar input {
+    border: 1px solid var(--border-primary);
+    border-radius: 3px;
+    color: var(--placeholder);
+    font-size: 12px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    width: 400px;
+}
+
+.daftar .check-box {
+    /* border: 1px solid red; */
+    color: var(--secondary);
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px;
+}
+
+.daftar .check-box input {
+    /* line-height: 20px; */
+    height: 12px;
+    width: 12px;
+}
+
+.daftar .check-box a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+
+.button-register {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.daftar .button-register button {
+    background-color: var(--primary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 5px;
+    color: var(--button-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: capitalize;
+    width: 200px;
+}
+
+.daftar .text-check {
+    color: var(--secondary);
+    font-size: 12px;
+    padding: 20px;
+}
+
+.daftar .text-check a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+
+/* ------------------------- login ------------------------- */
+.title-login a {
+    text-decoration: none;
+}
+
+.title-login h2 {
+    /* border: 1px solid var(--border-secondary); */
+    color: var(--primary);
+    font-weight: bold;
+    margin: 50px 0px 30px 0px;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.login {
+    background-color: var(--section);
+    border: 1px solid var(--border-primary);
+    box-sizing: border-box;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.274);
+    border-radius: 5px;
+    height: 480px;
+    margin: 0 auto 50px auto;
+    width: 450px;
+}
+
+.login h3 {
+    color: var(--secondary);
+    text-align: center;
+    text-transform: capitalize;
+    margin: 30px 0 20px 0;
+}
+
+.form-login {
+    margin: auto;
+    text-align: center;
+}
+
+.form-login input {
+    border: 1px solid var(--border-primary);
+    border-radius: 3px;
+    color: var(--placeholder);
+    font-size: 12px;
+    height: 40px;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    text-transform: capitalize;
+    width: 400px;
+}
+
+.login .kata-sandi {
+    /* border: 1px solid red; */
+    color: var(--secondary);
+    font-size: 12px;
+    line-height: 20px;
+    padding: 20px;
+    text-align: right;
+}
+
+.kata-sandi a {
+    color: var(--primary);
+    text-decoration: none;
+}
+
+
+.login .button-login {
+    margin: 30px 0px 30px 0px;
+    text-align: center;
+}
+
+.login .button-login button {
+    background-color: var(--primary);
+    border: 1px solid var(--border-secondary);
+    border-radius: 5px;
+    color: var(--button-color);
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px;
+    text-transform: capitalize;
+    width: 200px;
+}
+
+.login .text-check {
+    color: var(--secondary);
+    font-size: 12px;
+    padding: 20px;
+}
+
+.login .text-check a {
+    color: var(--primary);
+    text-decoration: none;
+}
